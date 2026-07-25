@@ -1,0 +1,14 @@
+/Users/rabinsubedi/Desktop/consoleC#/ConsoleAppProjects/bin/Debug/net10.0/ConsoleAppProjects
+/Users/rabinsubedi/Desktop/consoleC#/ConsoleAppProjects/bin/Debug/net10.0/ConsoleAppProjects.deps.json
+/Users/rabinsubedi/Desktop/consoleC#/ConsoleAppProjects/bin/Debug/net10.0/ConsoleAppProjects.runtimeconfig.json
+/Users/rabinsubedi/Desktop/consoleC#/ConsoleAppProjects/bin/Debug/net10.0/ConsoleAppProjects.dll
+/Users/rabinsubedi/Desktop/consoleC#/ConsoleAppProjects/bin/Debug/net10.0/ConsoleAppProjects.pdb
+/Users/rabinsubedi/Desktop/consoleC#/ConsoleAppProjects/obj/Debug/net10.0/ConsoleAppProjects.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rabinsubedi/Desktop/consoleC#/ConsoleAppProjects/obj/Debug/net10.0/ConsoleAppProjects.AssemblyInfoInputs.cache
+/Users/rabinsubedi/Desktop/consoleC#/ConsoleAppProjects/obj/Debug/net10.0/ConsoleAppProjects.AssemblyInfo.cs
+/Users/rabinsubedi/Desktop/consoleC#/ConsoleAppProjects/obj/Debug/net10.0/ConsoleAppProjects.csproj.CoreCompileInputs.cache
+/Users/rabinsubedi/Desktop/consoleC#/ConsoleAppProjects/obj/Debug/net10.0/ConsoleAppProjects.dll
+/Users/rabinsubedi/Desktop/consoleC#/ConsoleAppProjects/obj/Debug/net10.0/refint/ConsoleAppProjects.dll
+/Users/rabinsubedi/Desktop/consoleC#/ConsoleAppProjects/obj/Debug/net10.0/ConsoleAppProjects.pdb
+/Users/rabinsubedi/Desktop/consoleC#/ConsoleAppProjects/obj/Debug/net10.0/ConsoleAppProjects.genruntimeconfig.cache
+/Users/rabinsubedi/Desktop/consoleC#/ConsoleAppProjects/obj/Debug/net10.0/ref/ConsoleAppProjects.dll
