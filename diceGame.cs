@@ -1,6 +1,4 @@
-﻿using Microsoft.Win32.SafeHandles;
-
-namespace diceGame
+﻿namespace diceGame
 {
 class DiceGame
     {
@@ -9,22 +7,23 @@ class DiceGame
         // This is a simple dice game where the player rolls a die and the computer rolls a die. 
         // The player with the higher number wins.
 
-            int playerRandomNum ;
+            int playerRandomNum = 0 ;
             int computerRandomNum = 0;
             Random random = new Random();
-            computerRandomNum = random.Next(1, 7);
 
             int playerPoints = 0;
             int computerPoints = 0;
 
 
-        // Loop to allow the player to roll the dice 10 times
+        // Loop to allow the player to roll the dice 5 times
         // The player rolls the dice and the computer rolls the dice. The player with the higher number wins.
 
             for (int i = 0; i < 5; i++)
             {
                 System.Console.WriteLine("Press any key to roll the dice");
-                Console.ReadKey();
+
+                Console.ReadKey(true);//the use of true does not display the key pressed in the console window
+                                      // keeps the ui clean
 
                 playerRandomNum = random.Next(1, 7);
                 System.Console.WriteLine("You rolled a " + playerRandomNum);
@@ -33,6 +32,7 @@ class DiceGame
                 // Wait for 1 second before showing the computer's roll
                 System.Threading.Thread.Sleep(1000); 
 
+                computerRandomNum = random.Next(1, 7);
                 System.Console.WriteLine("Computer rolled a " + computerRandomNum);
 
         // Compare the player's roll to the computer's roll and determine the winner
@@ -56,7 +56,7 @@ class DiceGame
             }
 
             // After 5 rounds, determine the overall winner based on the points
-            
+
             if (playerPoints > computerPoints)
             {
                 System.Console.WriteLine("You are the overall winner!");
@@ -78,13 +78,6 @@ class DiceGame
             
             } 
 
-
         }
 
-
     }
-
-
-
-
-
