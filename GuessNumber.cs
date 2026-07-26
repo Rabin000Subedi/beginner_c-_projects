@@ -12,7 +12,7 @@ class Program
         System.Console.WriteLine("Guess a number between 1 and 10: ");
         System.Console.WriteLine("Guess the correct number to win the game!");
 
-        int attempts = 0;
+        int attempts = 1;
         while(!isCorrectguess)
             {
                 System.Console.WriteLine("Enter your guess: ");
@@ -36,20 +36,6 @@ class Program
             }
             System.Console.WriteLine("Congratulations! You guessed the correct number in " + attempts + " attempts.");
             System.Console.WriteLine("Thank you for playing the Guess the Number Game!");
-
-        }}}
-
-        
-
-
-
-
-
-
-
-
-
-    
-    
-
-
+        }
+    }
+}
