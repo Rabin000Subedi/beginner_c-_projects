@@ -1,125 +1,70 @@
-﻿namespace RockPaperScissors
+﻿using System.Data;
+
+namespace ToDoList
 {
- class Program
-  {
-   public static void Main(string[] args)
+    class Program
+    {
+        public static void Main(string[] args)
         {
-            Random random = new Random();
+            System.Console.WriteLine("Hello! welcome to the to-do list application");
+
+            List <string> taskList = new List<string>();
+
+            string userInput = "";
             
-            int playerScore = 0;
-            int computerScore = 0;
 
+            while (userInput != "e")
+            {
+            System.Console.WriteLine("Please enter 1 to add tasks");
+            System.Console.WriteLine("Please enter 2 to remove a task from the list");
+            System.Console.WriteLine("Please enter 3 to view the list of tasks");
+            System.Console.WriteLine("Please enter 'e' to exit from the program");
 
-            while (playerScore!=3 && computerScore!=3){
-             System.Console.WriteLine("The player score is "+playerScore+" and the computer score is "+computerScore);
+            userInput = Console.ReadLine().ToLower();
 
-             System.Console.WriteLine("Please enter 'r' for rock, 'p' for paper and 's' for scissor");
-             string playerChoice = Console.ReadLine().ToLower();
-
-             int enemyChoice = random.Next(0,3);               
-            
-            if (enemyChoice == 0)
+            if(userInput == "1")
                 {
-                    System.Console.WriteLine("Enemy chooses rock");
-                    switch (playerChoice)
-                    {
-                       case "r":
-                       System.Console.WriteLine("Tie");
-                       break;
+                    System.Console.WriteLine("Please enter the task you would like to enter");
+                    string enteredTask = Console.ReadLine();
 
-                       case "p":
-                       System.Console.WriteLine("Player wins this round");
-                       playerScore++;
-                       break;     
+                    taskList.Add(enteredTask);
+                    System.Console.WriteLine("The task was successfully added");
 
-                       case "s":
-                       System.Console.WriteLine("Computer wins this round");
-                       computerScore++;   
-                       break;
-                       
-                       default:
-                       System.Console.WriteLine("Invalid input");
-                       break;
-
-                
-                    }
                 }
-            
-            else if (enemyChoice == 1)
+            else if(userInput == "2")
                 {
-                    System.Console.WriteLine("Enemy chooses paper");
-
-                    switch (playerChoice)
+                    for (int i = 0; i< taskList.Count; i++)
                     {
-                       case "r":
-                       System.Console.WriteLine("Computer wins this round");
-                       computerScore++;
-                       break;
-
-                       case "p":
-                       System.Console.WriteLine("Tie!");
-                       break;     
-
-                       case "s":
-                       System.Console.WriteLine("Player wins this round");
-                       playerScore++;   
-                       break;
-
-                       default:
-                       System.Console.WriteLine("Invalid input");
-                       break;
-                                 
+                         System.Console.WriteLine(i+": " + taskList[i]);
                     }
-                }
-            else
-                {
-                    System.Console.WriteLine("Enemy chooses scissors");
+                    System.Console.WriteLine("Please enter the number of the task that you want to remove from the list");
+                    int taskNumber = Convert.ToInt32(Console.ReadLine());
+                    taskList.RemoveAt(taskNumber);
+
+                    System.Console.WriteLine("You have successfully removed "+taskNumber+" numbered tack");
                     
-                    switch (playerChoice)
+                }    
+            else if(userInput == "3")
+                {
+                    System.Console.WriteLine("Current tasks in the list : ");
+                    for (int i = 0; i < taskList.Count; i++)
                     {
-                       case "r":
-                       System.Console.WriteLine("Player wins this round");
-                       playerScore++;
-                       break;
-
-                       case "p":
-                       System.Console.WriteLine("Computer wins this round");
-                       computerScore++;
-                       break;     
-
-                       case "s":
-                       System.Console.WriteLine("Tie!");
-                       break;
-
-                       default:
-                       System.Console.WriteLine("Invalid input");
-                       break;
-                                 
+                        System.Console.WriteLine(taskList[i]);
                     }
+
+                }   
+            else if (userInput == "e")
+                {
+                    System.Console.WriteLine("Exiting program.....");
                 }
+                else
+                {
+                    System.Console.WriteLine("Invalid option entered, please try again");
+                }    
             }
 
-             if (playerScore == 3)
-                    {
-                        System.Console.WriteLine("You win!");
-                    }
-                    else
-                    {
-                        System.Console.WriteLine("You lose!");
-                    }      
-               
+         System.Console.WriteLine("Tnank you for using the application");   
 
-
-                }
-                }
+        }
+    }
 }
-
-        
-            
-        
-
- 
-    
-
-
-
